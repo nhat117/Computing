@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
-void primechk(int num) {
+
+int primechk(int num) {
 	    int i, result = 1; 
   	 // Iterate from 2 to n/2 
     for (i = 2; i <= sqrt(num); i++) { 
@@ -12,22 +13,27 @@ void primechk(int num) {
             break; 
         } 
     } 
-  	if(num<=1) 
+  	if (num<=1) 
     result = 0; 
-    else if(num==2) 
+    else if (num==2) 
     result = 1;  
-  	if (result == 1) { 
-        printf("%d is a prime number", num); 
+	return result;
+}
+
+void printres (int num) {
+	int result = primechk (num);
+	if (result == 1) { 
+        printf ("%d is a prime number", num); 
     } 
     else { 
-        printf("%d is not a prime number", num); 
+        printf ("%d is not a prime number", num); 
     } 
 }
 
-int main(void) {
-	printf("Please enter a number to check: ");
+int main (void) {
+	printf ("Please enter a number to check: ");
 	int num;
-	scanf("%d", &num);
-	primechk(num);
+	scanf ("%d", &num);
+	printres(num);
 	return 0;
 }

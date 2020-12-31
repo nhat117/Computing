@@ -23,4 +23,4 @@ int main(void) {
 	printf("Fibonacci of %d number is \n", n);\
 	printfib(n);
 	return 0;
-}
+}	

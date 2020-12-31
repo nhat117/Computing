@@ -7,6 +7,7 @@ int sumofrange(int n) {
 	else 
 		sum = n + sumofrange(n -1);
 	return sum;
+	
 }
 
 int main (void) {
