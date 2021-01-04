@@ -16,4 +16,4 @@ int main (void) {
 	} 
 	printf("%d", len - 1);
 	return 0;
-}
+} 

@@ -4,7 +4,7 @@
 void int2str(int num, char str[]) {
 	// Take the last digit
 	int lastdig = num % 10;
-	str[(int)log10(num)] = lastdig * '0';
+	str[(int)log10(num)] = lastdig + '0';
 
 	//Recursion with the new value
 	if (num / 10 != 0) 
@@ -20,6 +20,7 @@ int main (void) {
 	scanf("%d", &num);
 
 	int2str(num, str); // use the preference to pass to the function
-	printf("The converted string is %s", str);
+	printf("The converted string is %s ", str);
 	return 0;
 }
+ 

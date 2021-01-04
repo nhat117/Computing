@@ -99,7 +99,7 @@ int check_len(char info[]) {
 
     if (count_digit == 13) {
         return 1;
-    } else if (count_digit <= 13) {
+    } else if (count_digit < 13) {
         printf("Invalid ISBN. Less than 13 digits.\n");
         return 0;
     } else {

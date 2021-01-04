@@ -6,7 +6,7 @@
   Author: Nhat Minh BUI
   ID: s3878174
   Created  date: 23/11/2020
-  Acknowledgement: Clearly acknowledge the resources that you use to complete this assessment
+  Acknowledgement: https://rmit.instructure.com/courses/82917/files/15788676, repl.it/@nhat117/week3/ex1
 */
 
 #include <stdio.h>
